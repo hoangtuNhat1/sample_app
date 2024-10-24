@@ -1,0 +1,16 @@
+vi:
+  page_title: "Hướng dẫn ruby"
+  navbar:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
+    app_name: "Ứng dụng của tôi"
+  static_pages:
+    help:
+      title: "Trợ giúp"
+      heading: "Trợ giúp"
+      go_to_homepage: "Đi đến trang chủ"
+    home:
+      title: "Trang chủ"
+      heading: "Chào mừng đến với trang chủ"
+      welcome_message: "Đây là trang chủ của ứng dụng Rails của bạn."
