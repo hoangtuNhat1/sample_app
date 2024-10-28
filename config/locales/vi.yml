@@ -14,3 +14,14 @@ vi:
       title: "Trang chủ"
       heading: "Chào mừng đến với trang chủ"
       welcome_message: "Đây là trang chủ của ứng dụng Rails của bạn."
+  new_user: 
+    signup: "Đăng ký"
+    name: "Tên"
+    password: "Mật khẩu"
+    confirmation: "Nhập lại mật khẩu"
+  flash: 
+    success: "Chào mừng đến Sample App !"
+    warning: "Không tìm thấy người dùng !"
+  shared: 
+    error_message: Chứa các lỗi 
+
