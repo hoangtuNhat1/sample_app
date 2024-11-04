@@ -1,5 +1,5 @@
 href : 
   home_href: "/home"
-MAX_NAME_LENGTH: 50
-MAX_EMAIL_LENGTH: 50
-MIN_PASSWORD_LENGTH: 6
+max_name_length: 50
+max_email_length: 255
+min_password_length: 6

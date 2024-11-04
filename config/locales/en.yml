@@ -14,3 +14,12 @@ en:
       title: "Home"
       heading: "Welcome to the Home Page"
       welcome_message: "This is the home page of your Rails app."
+  new_user: 
+    signup: "Sign up"
+    name: "Name"
+    password: "Password"
+    confirmation: "Confirmation"
+    success: "Welcome to the Sample App !"
+    warning: "Not found user !"
+  shared: 
+    error_message: The form contains 
