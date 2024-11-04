@@ -22,3 +22,11 @@ vi:
   flash: 
     success: "Chào mừng đến Sample App !"
     warning: "Không tìm thấy người dùng !"
+  shared: 
+    error_message: "Chứa các lỗi:" 
+  new_session: 
+    login: "Đăng nhập"
+    email: "Email"
+    password: "Mật khẩu"
+    new_user: "Người dùng mới?"
+    signup_now: "Đăng ký ngay!"
