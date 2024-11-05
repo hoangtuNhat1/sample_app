@@ -1,15 +1,20 @@
 vi:
-  page_title: "Hướng dẫn ruby"
+  page_title: "Hướng dẫn Ruby"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
     login: "Đăng nhập"
     app_name: "Ứng dụng của tôi"
+    account: "Tài khoản"
+    users: "Người dùng"
+    profile: "Hồ sơ"
+    settings: "Cài đặt"
+    logout: "Đăng xuất"
   static_pages:
     help:
       title: "Trợ giúp"
       heading: "Trợ giúp"
-      go_to_homepage: "Đi đến trang chủ"
+      go_to_homepage: "Trở về trang chủ"
     home:
       title: "Trang chủ"
       heading: "Chào mừng đến với trang chủ"
@@ -18,15 +23,17 @@ vi:
     signup: "Đăng ký"
     name: "Tên"
     password: "Mật khẩu"
-    confirmation: "Nhập lại mật khẩu"
+    confirmation: "Xác nhận mật khẩu"
+    success: "Đăng ký thành công!"
   flash: 
-    success: "Chào mừng đến Sample App !"
-    warning: "Không tìm thấy người dùng !"
+    success: "Chào mừng đến với Ứng dụng Mẫu!"
+    warning: "Không tìm thấy người dùng!"
   shared: 
-    error_message: "Chứa các lỗi:" 
+    error_message: "Có lỗi: "
   new_session: 
     login: "Đăng nhập"
     email: "Email"
     password: "Mật khẩu"
     new_user: "Người dùng mới?"
     signup_now: "Đăng ký ngay!"
+    invalid: "Email/mật khẩu không hợp lệ"

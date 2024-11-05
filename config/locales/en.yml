@@ -5,6 +5,11 @@ en:
     help: "Help"
     login: "Login"
     app_name: "My Application"
+    account: "Account"
+    users: "Users"
+    profile: "Profile"
+    settings: "Settings"
+    logout: "Log out"
   static_pages:
     help:
       title: "Help"
@@ -19,6 +24,7 @@ en:
     name: "Name"
     password: "Password"
     confirmation: "Confirm password"
+    success: "Sing up successfully!"
   flash: 
     success: "Welcome to the Sample App!"
     warning: "User not found!"
@@ -30,3 +36,4 @@ en:
     password: "Password"
     new_user: "New user?"
     signup_now: "Sign up now!"
+    invalid: "Invalid email/password combination"

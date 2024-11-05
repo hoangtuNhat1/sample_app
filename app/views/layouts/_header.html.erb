@@ -1,20 +1,42 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <%= link_to t("navbar.app_name"), "#", class: "navbar-brand" %>
+    <%= link_to t("navbar.app_name"), root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <%= link_to t("navbar.home"), "#", class: "nav-link active", aria: { current: "page" } %>
         </li>
         <li class="nav-item">
           <%= link_to t("navbar.help"), "#", class: "nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to t("navbar.login"), "#", class: "nav-link" %>
-        </li>
+
+        <% if logged_in? %>
+          <li class="nav-item">
+            <%= link_to t("navbar.users"), "#", class: "nav-link" %>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <%= t("navbar.account") %>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="account">
+              <li><%= link_to t("navbar.profile"), current_user, class: "dropdown-item" %></li>
+              <li><%= link_to t("navbar.settings"), "#", class: "dropdown-item" %></li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <%= link_to t("navbar.logout"), logout_path, class: "dropdown-item", data: { "turbo-method": :delete } %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to t("navbar.login"), login_path, class: "nav-link" %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>
