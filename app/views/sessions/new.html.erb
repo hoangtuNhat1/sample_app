@@ -1,18 +1,25 @@
 <% provide :title, t("new_session.login") %>
-<h1><%=t("new_session.login")%></h1>
+<h1><%= t("new_session.login") %></h1>
 <div class="row justify-content-center">
   <div class="col-md-6 col-md-offset-3">
     <%= form_with url: login_path, scope: :session do |f| %>
 
-    <%= f.label :email, t("new_session.email") %>
-    <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :email, t("new_session.email") %>
+      <%= f.email_field :email, class: "form-control" %>
 
-    <%= f.label :password, t("new_session.password") %>
-    <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :password, t("new_session.password") %>
+      <%= f.password_field :password, class: "form-control" %>
+      
+      <div class="d-flex gap-2">
+        <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me, class: "checkbox-input" %>
+        <% end %>
+        <span class="checkbox-label"><%= t("new_session.remmember") %></span>
+      </div>
 
-    <%= f.submit t("new_session.login"), class: "btn btn-primary" %>
-  <% end %>
+      <%= f.submit t("new_session.login"), class: "btn btn-primary" %>
+    <% end %>
 
-  <p><%= t("new_session.new_user") %> <%= link_to t("new_session.signup_now"), signup_path %></p>
- </div>
+    <p><%= t("new_session.new_user") %> <%= link_to t("new_session.signup_now"), signup_path %></p>
+  </div>
 </div>
