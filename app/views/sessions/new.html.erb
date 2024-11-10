@@ -1,5 +1,5 @@
 <% provide :title, t("new_session.login") %>
-<h1><%= t("new_session.login") %></h1>
+<h1 class="text-center"><%= t("new_session.login") %></h1>
 <div class="row justify-content-center">
   <div class="col-md-6 col-md-offset-3">
     <%= form_with url: login_path, scope: :session do |f| %>
@@ -8,6 +8,7 @@
       <%= f.email_field :email, class: "form-control" %>
 
       <%= f.label :password, t("new_session.password") %>
+      <%= link_to t("reset_password.new"), new_password_reset_path %>
       <%= f.password_field :password, class: "form-control" %>
       
       <div class="d-flex gap-2">

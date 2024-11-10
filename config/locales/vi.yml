@@ -59,6 +59,29 @@ vi:
     greeting: "Xin chào %{name},"
     welcome_message: "Chào mừng đến với Ứng dụng Mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
     activate_link: "Kích hoạt"
+    subject: "Kích hoạt tài khoản"
   activation: 
     valid: "Tài khoản đã được kích hoạt!"
     invalid: "Liên kết kích hoạt không hợp lệ"
+  reset_password: 
+    new: "(quên mặt khẩu)"
+    title: "Quên mặt khẩu"
+    email_sent: "Email đặt lại mặt khẩu đã gửi"
+    email_not_found: "Không tìm thấy người dùng này"
+    mail_subject: "Đổi mặt khẩu"
+    email_body:
+      greeting: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      expiration: "Liên kết này sẽ hết hạn sau hai giờ."
+      ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      form:
+        error_messages: "Vui lòng sửa các lỗi sau:"
+        email_field: "Email"
+        password_label: "Mật khẩu"
+        password_confirmation_label: "Xác nhận mật khẩu"
+        update_button: "Cập nhật mật khẩu"
+    update:
+      empty: "không được để trống"
+      success: "Mặt khẩu đã được thay đổi"
+      expire:  "Yêu cầu hết hạn"
