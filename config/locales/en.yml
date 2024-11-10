@@ -1,10 +1,15 @@
 en:
-  page_title: "Ruby tutorials"
+  page_title: "Ruby Guide"
   navbar:
     home: "Home"
     help: "Help"
     login: "Login"
-    app_name: "MyApp"
+    app_name: "My Application"
+    account: "Account"
+    users: "Users"
+    profile: "Profile"
+    settings: "Settings"
+    logout: "Log out"
   static_pages:
     help:
       title: "Help"
@@ -12,14 +17,23 @@ en:
       go_to_homepage: "Go to homepage"
     home:
       title: "Home"
-      heading: "Welcome to the Home Page"
-      welcome_message: "This is the home page of your Rails app."
+      heading: "Welcome to the homepage"
+      welcome_message: "This is the homepage of your Rails application."
   new_user: 
     signup: "Sign up"
     name: "Name"
     password: "Password"
-    confirmation: "Confirmation"
-    success: "Welcome to the Sample App !"
-    warning: "Not found user !"
+    confirmation: "Confirm password"
+    success: "Sing up successfully!"
+  flash: 
+    success: "Welcome to the Sample App!"
+    warning: "User not found!"
   shared: 
-    error_message: The form contains 
+    error_message: "Contains errors: "
+  new_session: 
+    login: "Login"
+    email: "Email"
+    password: "Password"
+    new_user: "New user?"
+    signup_now: "Sign up now!"
+    invalid: "Invalid email/password combination"
