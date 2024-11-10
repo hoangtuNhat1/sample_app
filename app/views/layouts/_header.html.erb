@@ -16,7 +16,7 @@
 
         <% if logged_in? %>
           <li class="nav-item">
-            <%= link_to t("navbar.users"), "#", class: "nav-link" %>
+            <%= link_to t("navbar.users"), users_path, class: "nav-link" %>
           </li>
 
           <li class="nav-item dropdown">
@@ -25,7 +25,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="account">
               <li><%= link_to t("navbar.profile"), current_user, class: "dropdown-item" %></li>
-              <li><%= link_to t("navbar.settings"), "#", class: "dropdown-item" %></li>
+              <li><%= link_to t("navbar.settings"), edit_user_path(current_user), class: "dropdown-item" %></li>
               <li><hr class="dropdown-divider"></li>
               <li>
                 <%= link_to t("navbar.logout"), logout_path, class: "dropdown-item", data: { "turbo-method": :delete } %>

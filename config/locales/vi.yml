@@ -38,3 +38,18 @@ vi:
     signup_now: "Đăng ký ngay!"
     invalid: "Email/mật khẩu không hợp lệ"
     remmember: "Hãy ghi nhớ tôi"
+  update_user: 
+    title: "Chỉnh sửa thông tin"
+    update: "Cập nhật thông tin"
+    success:  "Hồ sơ đã được cập nhật"
+    avatar: "thay đổi"
+    
+  index: 
+    title: "Tất cả người dùng"
+  destroy: 
+    success: "Người dùng đã bị xóa"
+    not_found: "Không tìm thấy nguời dùng"
+    sure: "Xác nhận xóa ?"
+    button: "Xóa"
+  authorization: 
+    login: "Xin hãy đăng nhập."

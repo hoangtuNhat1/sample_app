@@ -1,0 +1,22 @@
+<% provide(:title, t("index.title")) %>
+<h1 class="text-center mb-5 display-4"><%= t("index.title") %></h1>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+      
+      <div class="d-flex justify-content-center mb-4">
+        <%== pagy_nav(@pagy) %>
+      </div>
+      
+      <ul class="list-group shadow-sm rounded">
+        <%= render @users %>
+      </ul>
+
+      <div class="d-flex justify-content-center mt-4">
+        <%== pagy_nav(@pagy) %>
+      </div>
+
+    </div>
+  </div>
+</div>
