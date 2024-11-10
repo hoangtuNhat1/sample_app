@@ -1,5 +1,5 @@
 vi:
-  page_title: "Hướng dẫn Ruby"
+  page_title: "Hướng Dẫn Ruby"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
@@ -17,7 +17,7 @@ vi:
       go_to_homepage: "Trở về trang chủ"
     home:
       title: "Trang chủ"
-      heading: "Chào mừng đến với trang chủ"
+      heading: "Chào mừng đến trang chủ"
       welcome_message: "Đây là trang chủ của ứng dụng Rails của bạn."
   new_user: 
     signup: "Đăng ký"
@@ -36,20 +36,29 @@ vi:
     password: "Mật khẩu"
     new_user: "Người dùng mới?"
     signup_now: "Đăng ký ngay!"
-    invalid: "Email/mật khẩu không hợp lệ"
-    remmember: "Hãy ghi nhớ tôi"
+    invalid: "Email hoặc mật khẩu không hợp lệ"
+    remember: "Ghi nhớ tôi"
+    not_activate: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để nhận liên kết kích hoạt."
   update_user: 
-    title: "Chỉnh sửa thông tin"
-    update: "Cập nhật thông tin"
-    success:  "Hồ sơ đã được cập nhật"
+    title: "Chỉnh sửa người dùng"
+    update: "Cập nhật hồ sơ của bạn"
+    success: "Cập nhật hồ sơ thành công"
     avatar: "thay đổi"
-    
   index: 
-    title: "Tất cả người dùng"
+    title: "Tất cả Người Dùng"
   destroy: 
-    success: "Người dùng đã bị xóa"
-    not_found: "Không tìm thấy nguời dùng"
-    sure: "Xác nhận xóa ?"
-    button: "Xóa"
+    success: "Xóa người dùng thành công"
+    not_found: "Không tìm thấy người dùng"
+    sure: "Bạn có chắc không?" 
+    button: "XÓA"
   authorization: 
-    login: "Xin hãy đăng nhập."
+    login: "Vui lòng đăng nhập."
+  mail: 
+    info: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
+    title: "Ứng dụng Mẫu"
+    greeting: "Xin chào %{name},"
+    welcome_message: "Chào mừng đến với Ứng dụng Mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    activate_link: "Kích hoạt"
+  activation: 
+    valid: "Tài khoản đã được kích hoạt!"
+    invalid: "Liên kết kích hoạt không hợp lệ"

@@ -36,9 +36,6 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
-
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
@@ -67,4 +64,18 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  # Cấu hình cho Action Mailer để gửi email
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: "localhost", port: 3001 }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",         # SMTP server của nhà cung cấp email, ví dụ Gmail
+    port: 587,                          # Cổng SMTP
+    domain: "example.com",              # Tên miền của bạn
+    user_name: ENV["EMAIL_USER_NAME"],  # Email gửi (để trong biến môi trường để bảo mật)
+    password: ENV["EMAIL_PASSWORD"],    # Mật khẩu (để trong biến môi trường để bảo mật)
+    authentication: "plain",
+    enable_starttls_auto: true          # Kích hoạt STARTTLS để bảo mật
+  }
 end
