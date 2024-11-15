@@ -3,11 +3,29 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :find_user, only: %i(show edit update destroy)
+
   def index
-    @pagy, @users = pagy(User.all, items: Settings.item_per_page)
+    @pagy, @users = pagy(User.where(activated: true), items: Settings.item_per_page)
   end
 
-  def show; end
+  def show
+    redirect_to root_url and return unless @user.activated?
+  end
+
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      @user.send_activation_email
+      flash[:info] = t "mail.info"
+      redirect_to root_url
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
 
   def edit; end
 
@@ -20,27 +38,11 @@ class UsersController < ApplicationController
     end
   end
 
-  def new
-    @user = User.new
-  end
-
-  def create
-    @user = User.new(user_params)
-    if @user.save
-      reset_session
-      flash[:success] = t "new_user.success"
-      log_in @user
-      redirect_to @user
-    else
-      render :new, status: :unprocessable_entity
-    end
-  end
-
   def destroy
+    @user.destroy
     flash[:success] = t "destroy.success"
     redirect_to users_url, status: :see_other
   end
-
   private
 
   def admin_user

@@ -37,7 +37,8 @@ en:
     new_user: "New user?"
     signup_now: "Sign up now!"
     invalid: "Invalid email/password combination"
-    remmember: "Remember me"
+    remember: "Remember me"
+    not_activate: "Account not activated. Check your email for the activation link."
   update_user: 
     title: "Edit user"
     update: "Update your profile"
@@ -52,3 +53,12 @@ en:
     button: "DELETE"
   authorization: 
     login: "Please log in."
+  mail: 
+    info: "Please check your email to activate your account."
+    title: "Sample App"
+    greeting: "Hi %{name},"
+    welcome_message: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate_link: "Activate"
+  activation: 
+    valid: "Account activated!"
+    invalid: "Invalid activation link"

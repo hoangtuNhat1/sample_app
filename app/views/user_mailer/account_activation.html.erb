@@ -1,0 +1,4 @@
+<h1><%= t("mail.title") %></h1>
+<p><%= t("mail.greeting", name: @user.name) %></p>
+<p><%= t("mail.welcome_message") %></p>
+<%= link_to t("mail.activate_link"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>
