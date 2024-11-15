@@ -1,0 +1,13 @@
+<% provide(:title, t("update_user.title")) %>
+<h1 class="text-center"><%= t("update_user.update") %></h1>
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <%= render "form" %>
+    
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= link_to t("update_user.avatar"), "https://gravatar.com/emails", target: "_blank" %>
+    </div>
+  </div>
+</div>

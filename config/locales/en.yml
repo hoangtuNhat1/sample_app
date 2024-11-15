@@ -38,3 +38,17 @@ en:
     signup_now: "Sign up now!"
     invalid: "Invalid email/password combination"
     remmember: "Remember me"
+  update_user: 
+    title: "Edit user"
+    update: "Update your profile"
+    success:  "Profile updated"
+    avatar: "change"
+  index: 
+    title: "All Users"
+  destroy: 
+    success: "User deleted"
+    not_found: "User not found"
+    sure: "Are you sure?" 
+    button: "DELETE"
+  authorization: 
+    login: "Please log in."

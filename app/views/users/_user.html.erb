@@ -1,0 +1,10 @@
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  <div class="d-flex align-items-center">
+    <%= gravatar_for user, size: Settings.gravatar_size, class: "rounded-circle me-3" %>
+    <%= link_to user.name, user, class: "text-decoration-none fw-bold" %>
+  </div>
+  
+  <% if current_user.admin? && !current_user?(user) %>
+    <%= link_to t("destroy.button"), user, class: "btn btn-danger btn-sm", data: { "turbo-method": :delete, turbo_confirm: t("destroy.sure")} %>
+  <% end %>
+</li>
