@@ -19,6 +19,8 @@ en:
       title: "Home"
       heading: "Welcome to the homepage"
       welcome_message: "This is the homepage of your Rails application."
+      view_my_profile: "View my profile"
+      userMicroposts: "User Microposts"
   new_user: 
     signup: "Sign up"
     name: "Name"
@@ -59,6 +61,43 @@ en:
     greeting: "Hi %{name},"
     welcome_message: "Welcome to the Sample App! Click on the link below to activate your account:"
     activate_link: "Activate"
+    subject: "Account activation"
   activation: 
     valid: "Account activated!"
     invalid: "Invalid activation link"
+  reset_password: 
+    new: "(forgot password)"
+    title: "Forgot password"
+    email_sent: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    mail_subject: "Password reset"
+    email_body:
+      greeting: "To reset your password click the link below:"
+      expiration: "This link will expire in two hours."
+      ignore: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    password_reset:
+      title: "Reset password"
+      form:
+        error_messages: "Please correct the following errors:"
+        email_field: "Email"
+        password_label: "Password"
+        password_confirmation_label: "Confirmation"
+        update_button: "Update password"
+    update:
+      empty: "can't be empty"
+      success: "Password has been reset."
+      expire:  "Password reset has expired."
+  microposts: 
+    title: "Microposts"
+    empty: "This user has no microposts."
+    time_ago: "Posted %{time} ago."
+    created: "Micropost created!"
+    form_placeholder: "Compose new micropost..."
+    post: "Post"
+    delete: "Delete"
+    confirm_delete: "Are you sure?"
+    success_create_message: "Micropost created!"
+    success_delete_message: "Micropost deleted"
+    invalid: "Invalid micropost"
+    image_format: "Please upload an image file"
+    image_size: "Image size should be less than 5MB"

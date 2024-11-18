@@ -1,5 +1,38 @@
 <% provide :title, @user.name %>
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
+
+<div class="row gx-4 gy-4">
+  <aside class="col-lg-4 col-md-5">
+    <div class="card shadow-sm border-0">
+      <div class="card-body text-center">
+        <%= gravatar_for @user, size: 100, class: "rounded-circle mb-3 shadow" %>
+        <h1 class="h5 fw-bold">
+          <%= @user.name %>
+        </h1>
+      </div>
+    </div>
+  </aside>
+
+  <div class="col-lg-8 col-md-7">
+    <% if @user.microposts.any? %>
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white">
+          <h3 class="h5 m-0">
+             <%=t ("microposts.title")%>(<%= @user.microposts.count %>)
+          </h3>
+        </div>
+        <div class="card-body">
+          <ol class="list-group list-group-flush microposts">
+            <%= render @microposts %>
+          </ol>
+        </div>
+        <div class="card-footer text-center bg-light">
+          <%== pagy_nav @page %>
+        </div>
+      </div>
+    <% else %>
+      <div class="alert alert-info text-center" role="alert">
+        <i class="bi bi-info-circle"></i> <%=t ("microposts.empty") %>
+      </div>
+    <% end %>
+  </div>
+</div>

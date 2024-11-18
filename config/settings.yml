@@ -1,3 +1,11 @@
+default:
+  image:
+    fileSize: 5
+    type: 
+      - image/jpeg
+      - image/png
+      - image/gif
+    size: [500, 500]
 href : 
   home_href: "/home"
 max_name_length: 50
@@ -6,3 +14,7 @@ min_password_length: 6
 gravatar_size: 50
 item_per_page: 10
 mail_name: "user@realdomain.com"
+expire_time: 2
+micropost: 
+  content:
+    max_len: 140

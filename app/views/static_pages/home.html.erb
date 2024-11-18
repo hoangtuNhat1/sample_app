@@ -1,3 +1,23 @@
 <%= provide :title, t("static_pages.home.title") %>
-<h1><%= t("static_pages.home.heading") %></h1>
-<p><%= t("static_pages.home.welcome_message") %></p>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t "static_pages.home.userMicroposts" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t "static_pages.home.heading" %></h1>
+    <p><%= t "static_pages.home.welcome_message" %></p>
+    <%= link_to t("new_session.signup_now"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>

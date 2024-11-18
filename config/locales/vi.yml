@@ -1,4 +1,11 @@
 vi:
+  activerecord:
+      errors:
+        models:
+          micropost:
+            attributes:
+              content:
+                blank: "Nội dung không được để trống" # Translation for blank content
   page_title: "Hướng Dẫn Ruby"
   navbar:
     home: "Trang chủ"
@@ -19,6 +26,8 @@ vi:
       title: "Trang chủ"
       heading: "Chào mừng đến trang chủ"
       welcome_message: "Đây là trang chủ của ứng dụng Rails của bạn."
+      view_my_profile: "Xem hồ sơ của tôi"
+      userMicroposts: "Bài viết của người dùng"
   new_user: 
     signup: "Đăng ký"
     name: "Tên"
@@ -59,6 +68,85 @@ vi:
     greeting: "Xin chào %{name},"
     welcome_message: "Chào mừng đến với Ứng dụng Mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
     activate_link: "Kích hoạt"
+    subject: "Kích hoạt tài khoản"
   activation: 
     valid: "Tài khoản đã được kích hoạt!"
     invalid: "Liên kết kích hoạt không hợp lệ"
+  reset_password: 
+    new: "(quên mặt khẩu)"
+    title: "Quên mặt khẩu"
+    email_sent: "Email đặt lại mặt khẩu đã gửi"
+    email_not_found: "Không tìm thấy người dùng này"
+    mail_subject: "Đổi mặt khẩu"
+    email_body:
+      greeting: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      expiration: "Liên kết này sẽ hết hạn sau hai giờ."
+      ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      form:
+        error_messages: "Vui lòng sửa các lỗi sau:"
+        email_field: "Email"
+        password_label: "Mật khẩu"
+        password_confirmation_label: "Xác nhận mật khẩu"
+        update_button: "Cập nhật mật khẩu"
+    update:
+      empty: "không được để trống"
+      success: "Mặt khẩu đã được thay đổi"
+      expire:  "Yêu cầu hết hạn"
+  datetime:
+    distance_in_words:
+      less_than_x_seconds: "Ít hơn %{count} giây"
+      less_than_x_minutes: "Ít hơn %{count} phút"
+      over_x_years: "Hơn %{count} năm"
+      almost_x_years: "Gần %{count} năm"
+      about_x_seconds:
+        one: "khoảng 1 giây"
+        other: "khoảng %{count} giây"
+      x_seconds:
+        one: "1 giây"
+        other: "%{count} giây"
+      about_x_minutes:
+        one: "khoảng 1 phút"
+        other: "khoảng %{count} phút"
+      x_minutes:
+        one: "1 phút"
+        other: "%{count} phút"
+      about_x_hours:
+        one: "khoảng 1 giờ"
+        other: "khoảng %{count} giờ"
+      x_hours:
+        one: "1 giờ"
+        other: "%{count} giờ"
+      about_x_days:
+        one: "khoảng 1 ngày"
+        other: "khoảng %{count} ngày"
+      x_days:
+        one: "1 ngày"
+        other: "%{count} ngày"
+      about_x_months:
+        one: "khoảng 1 tháng"
+        other: "khoảng %{count} tháng"
+      x_months:
+        one: "1 tháng"
+        other: "%{count} tháng"
+      about_x_years:
+        one: "khoảng 1 năm"
+        other: "khoảng %{count} năm"
+      x_years:
+        one: "1 năm"
+        other: "%{count} năm"
+  microposts: 
+    title: "Microposts"
+    empty: "Người dùng này không có microposts."
+    time_ago: "Đã đăng %{time} trước."
+    created: "Micropost đã được tạo"
+    form_placeholder: "Viết bài mới..."
+    post: "Đăng bài"
+    delete: "Xóa"
+    confirm_delete: "Bạn có chắc chắn?"
+    success_create_message: "Bài viết đã được tạo" 
+    success_delete_message: "Bài viết đã được xóa"
+    invalid: "Bài viết không hợp lệ"
+    image_format: "Vui lòng tải lên một tập tin ảnh"
+    image_size: "Kích thước ảnh không được vượt quá 5MB"
