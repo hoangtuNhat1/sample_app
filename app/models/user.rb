@@ -6,6 +6,8 @@ class User < ApplicationRecord
   before_create :create_activation_digest
   before_save :downcase_email
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true, length: {maximum: Settings.max_name_length}
   validates :email, presence: true,
                     format: {with: URI::MailTo::EMAIL_REGEXP},
@@ -16,7 +18,7 @@ class User < ApplicationRecord
                        allow_nil: true
 
   has_secure_password
-
+  scope :activated, ->{where(activated: true)}
   class << self
     def digest string
       cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
@@ -26,6 +28,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    microposts
   end
 
   def remember

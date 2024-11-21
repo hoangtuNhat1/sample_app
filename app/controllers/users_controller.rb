@@ -5,11 +5,13 @@ class UsersController < ApplicationController
   before_action :find_user, only: %i(show edit update destroy)
 
   def index
-    @pagy, @users = pagy(User.where(activated: true), items: Settings.item_per_page)
+    @pagy, @users = pagy User.activated, items: Settings.item_per_page
   end
 
   def show
     redirect_to root_url and return unless @user.activated?
+
+    @page, @microposts = pagy @user.microposts, items: Settings.item_per_page
   end
 
   def new
@@ -51,14 +53,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(User::USER_PARAMS)
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "authorization.login"
-    redirect_to login_url, status: :see_other
   end
 
   def correct_user

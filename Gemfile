@@ -45,10 +45,9 @@ gem "bootstrap", "~> 5.3.3"
 # Use Sass to process CSS
 gem "sassc-rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
-# gem "image_processing", "~> 1.2"
-
+gem "active_storage_validations"
 gem "dotenv-rails", groups: [:development, :test]
-
+gem "image_processing", "~> 1.2"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html
   gem "debug", platforms: %i(mri mingw x64_mingw)

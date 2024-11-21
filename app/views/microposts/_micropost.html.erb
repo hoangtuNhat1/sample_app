@@ -1,0 +1,25 @@
+<li id="micropost-<%= micropost.id %>" class="list-group-item mb-3">
+  <div class="d-flex align-items-start">
+    <%= link_to gravatar_for(micropost.user, size: Settings.gravatar_size, class: "rounded-circle me-3"), micropost.user %>
+
+    <div>
+      <span class="fw-bold text-primary">
+        <%= link_to micropost.user.name, micropost.user %>
+      </span>
+
+      <p class="mb-2">
+        <%= micropost.content %>
+        <% if micropost.image.attached? %>
+          <%= image_tag micropost.image.variant(:display) %>
+        <% end %>
+      </p>
+
+      <small class="text-muted">
+        <%= t("microposts.time_ago", time: time_ago_in_words(micropost.created_at)) %>
+        <% if current_user? micropost.user %>
+          <%= link_to t("microposts.delete"), micropost, data: { "turbo-method": :delete, turbo_confirm: t("microposts.confirm_delete")} %>
+        <% end %>
+      </small>
+    </div>
+  </div>
+</li>
