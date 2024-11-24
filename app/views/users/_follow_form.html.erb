@@ -1,0 +1,5 @@
+<% unless current_user?(@user) %>
+  <div id="follow_form" class="text-center mt-3">
+    <%= render partial: current_user.following?(@user) ? "unfollow" : "follow" %>
+  </div>
+<% end %>

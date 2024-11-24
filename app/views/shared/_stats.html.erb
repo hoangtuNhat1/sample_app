@@ -1,0 +1,14 @@
+<div class="stats d-flex justify-content-between">
+  <%= link_to following_user_path(user), class: "text-decoration-none text-center" do %>
+    <div>
+      <strong id="following" class="stat d-block"><%= user.following.count %></strong>
+      <span><%= t "views.users.following" %></span>
+    </div>
+  <% end %>
+  <%= link_to followers_user_path(user), class: "text-decoration-none text-center" do %>
+    <div>
+      <strong id="followers" class="stat d-block"><%= user.followers.count %></strong>
+      <span><%= t "views.users.followers" %></span>
+    </div>
+  <% end %>
+</div>
