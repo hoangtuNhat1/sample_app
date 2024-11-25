@@ -101,3 +101,86 @@ en:
     invalid: "Invalid micropost"
     image_format: "Please upload an image file"
     image_size: "Image size should be less than 5MB"
+  views:
+    home:
+      title: "Home"
+      subtitle: "This is the home page for the %{homePage} sample application."
+      signup: "Sign up now!"
+      linkTitle: "Ruby on Rails Tutorial"
+      helpPage: "Rails Tutorial Help Page"
+      bookPage: "Ruby on Rails Tutorial"
+      view_my_profile: "View my profile"
+      userMicroposts: "User Microposts"
+    help:
+      title: "Help"
+      body: "Get help on the Ruby on Rails Tutorial at the %{helpPage}. To get help on this sample app, see the <em>%{bookPage}</em> book."
+    contact:
+      hello: "Hello"
+    sign_up:
+      title: "Sign up"
+      create_account: "Create my account"
+      success_message: "Welcome to the Sample App!"
+      check_email: "Please check your email to activate your account."
+      success_activation: "Account activated!"
+      invalid_activation: "Invalid activation link"
+    users:
+      not_found: "User not found"
+      edit:
+        title: "Edit user"
+        subtitle: "Update your profile"
+        save_changes: "Save changes"
+        change_avatar: "Change avatar"
+      update:
+        success_message: "Profile updated"
+      can_not_edit: "You cannot edit this account."
+      index:
+        title: "All users"
+        subtitle: "Listing all users"
+      destroy:
+        delete: "Delete"
+        success_message: "User deleted"
+        fail_message: "Delete failed"
+        confirm_delete: "Are you sure?"
+      microposts: "Microposts (%{count})"
+      following: "Following"
+      followers: "Followers"
+      follow: "Follow"
+      unfollow: "Unfollow"
+    login:
+      title: "Log in"
+      login: "Log in"
+      new_user: "New user?"
+      sign_up: "Sign up now!"
+      password: "Password"
+      success_message: "Login successfully!"
+      error_message: "Invalid email/password combination"
+      remember_me: "Remember me on this device"
+      account_not_activated: "Account not activated. Check your email for the activation link."
+      forgot_password: "Forgot password?"
+    password_resets:
+      title: "Reset password"
+      password_confirmation: "Password confirmation"
+      flash:
+        email_sent: "Email sent with password reset instructions"
+        email_not_found: "Email address not found"
+        password_reset: "Password has been reset."
+        expired_link: "Password reset has expired."
+        user_not_found: "User not found"
+        user_not_activated: "User not activated"
+    forgot_password: 
+      title: "Forgot password"
+      submit: "Submit"
+    microposts:
+      success_create_message: "Micropost created!"
+      success_delete_message: "Micropost deleted"
+      fail_delete_message: "Delete failed"
+      invalid: "Invalid micropost"
+      image_format: "Please upload an image file"
+      image_size: "Image size should be less than 5MB"
+      delete: "Delete"
+      confirm_delete: "Are you sure?"
+      post: "Post"
+      form_placeholder: "Compose new micropost..."
+      posted_ago: "Posted %{time} ago"
+    flash:
+      please_log_in: "Please log in."

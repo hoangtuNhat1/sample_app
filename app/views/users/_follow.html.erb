@@ -1,0 +1,6 @@
+<%= form_for(current_user.active_relationships.build, url: relationships_path, html: { class: "d-inline" }) do |f| %>
+  <div class="mb-2">
+    <%= hidden_field_tag :followed_id, @user.id %>
+    <%= f.submit t("views.users.follow"), class: "btn btn-primary btn-sm" %>
+  </div>
+<% end %>

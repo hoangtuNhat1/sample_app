@@ -5,7 +5,7 @@ vi:
           micropost:
             attributes:
               content:
-                blank: "Nội dung không được để trống" # Translation for blank content
+                blank: "Nội dung không được để trống" 
   page_title: "Hướng Dẫn Ruby"
   navbar:
     home: "Trang chủ"
@@ -150,3 +150,86 @@ vi:
     invalid: "Bài viết không hợp lệ"
     image_format: "Vui lòng tải lên một tập tin ảnh"
     image_size: "Kích thước ảnh không được vượt quá 5MB"
+  views:
+    home:
+      title: "Trang chủ"
+      subtitle: "Đây là trang chủ của sample app %{homePage}."
+      signup: "Đăng ký ngay!"
+      linkTitle: "Hướng dẫn Ruby on Rails"
+      helpPage: "Trang trợ giúp Rails Tutorial"
+      bookPage: "Hướng dẫn Ruby on Rails"
+      view_my_profile: "Xem hồ sơ của tôi"
+      userMicroposts: "Bài viết của người dùng"
+    help:
+      title: "Trợ giúp"
+      body: "Nhận sự trợ giúp trong %{helpPage}. Để xem trợ giúp cho ứng sample app này, hãy xem sách <em>%{bookPage}</em>."
+    contact:
+      hello: "Xin chào"
+    sign_up:
+      title: "Đăng ký"
+      create_account: "Tạo tài khoản của tôi"
+      success_message: "Chào mừng đến với Sample App!"
+      check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
+      success_activation: "Tài khoản đã được kích hoạt!"
+      invalid_activation: "Link kích hoạt không hợp lệ"
+    users:
+      not_found: "Không tìm thấy người dùng"
+      edit:
+        title: "Chỉnh sửa người dùng"
+        subtitle: "Cập nhật hồ sơ của bạn"
+        save_changes: "Lưu thay đổi"
+        change_avatar: "Thay đổi ảnh đại diện"
+      update:
+        success_message: "Hồ sơ đã được cập nhật"
+      can_not_edit: "Bạn không thể chỉnh sửa tài khoản này."
+      index:
+        title: "Tất cả người dùng"
+        subtitle: "Danh sách tất cả người dùng"
+      destroy:
+        delete: "Xóa"
+        success_message: "Người dùng đã bị xóa"
+        fail_message: "Xóa thất bại"
+        confirm_delete: "Bạn có chắc chắn?"
+      microposts: "Bài viết (%{count})"
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
+    login:
+      title: "Đăng nhập"
+      login: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      sign_up: "Đăng ký ngay!"
+      password: "Mật khẩu"
+      success_message: "Đăng nhập thành công!"
+      error_message: "Email/mật khẩu không hợp lệ"
+      remember_me: "Ghi nhớ tôi trên thiết bị này"
+      account_not_activated: "Tài khoản chưa được kích hoạt. Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+      forgot_password: "Quên mật khẩu?"
+    password_resets:
+      title: "Khôi phục mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      flash: 
+        email_sent: "Email đã được gửi với hướng dẫn khôi phục mật khẩu"
+        email_not_found: "Không tìm thấy email"
+        password_reset: "Mật khẩu đã được khôi phục"
+        expired_link: "Link khôi phục mật khẩu đã hết hạn"
+        user_not_found: "Không tìm thấy người dùng"
+        user_not_activated: "Tài khoản chưa được kích hoạt"
+    forgot_password: 
+      title: "Quên mật khẩu"
+      submit: "Gửi"   
+    microposts:
+      success_create_message: "Bài viết đã được tạo" 
+      success_delete_message: "Bài viết đã được xóa"
+      fail_delete_message: "Xóa thất bại"
+      invalid: "Bài viết không hợp lệ"
+      image_format: "Vui lòng tải lên một tập tin ảnh"
+      image_size: "Kích thước ảnh không được vượt quá 5MB"
+      delete: "Xóa"
+      confirm_delete: "Bạn có chắc chắn?"
+      post: "Đăng bài"
+      form_placeholder: "Viết bài mới..."
+      posted_ago: "Đã đăng %{time} trước"
+    flash:
+      please_log_in: "Vui lòng đăng nhập"
